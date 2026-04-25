@@ -68,7 +68,7 @@ export default function Header() {
                   : "bg-white text-[#171717]"
               }`}
             >
-              <span className="uppercase font-medium">CONTACT US</span>
+              <span className="uppercase font-medium">HUBUNGI KAMI</span>
             </button>
           </div>
         </div>

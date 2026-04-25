@@ -52,38 +52,41 @@ export function LandingView() {
       >
         <div className="w-full max-w-[1240px] mx-auto pt-[180px] pb-[50px] xl:pt-[250px] xl:pb-[70px] px-6 md:px-0">
           <div className="flex">
-            <div className="w-full max-w-[85%] xl:max-w-[50%]">
+            <div className="w-full max-w-[90%] xl:max-w-[55%]">
               <div className="bg-white/10 backdrop-blur-sm inline-flex items-center px-[15px] py-2.5 rounded-full border border-white/20">
                 <h2 className="font-medium tracking-[0.3px]">
-                  Feel The Experience
+                  Jelajahi Destinasi Terbaik
                 </h2>
               </div>
               <h2 className="font-el-messiri text-[46px] md:text-[64px] xl:text-[74px] font-semibold leading-none mt-6">
-                Explore The Majestic Asia Landscape Now
+                Temukan Keajaiban Tersembunyi di Sudut Asia
               </h2>
               <Link
                 href="#sec-1"
                 className="inline-flex items-center justify-center gap-2.5 mt-5 py-[15px] px-[34px] bg-white text-[#171717] text-sm font-karla font-medium tracking-[0.3px] rounded-full"
               >
-                MULAI PERJALANAN ANDA
+                EKSPLORASI SEKARANG
                 <HugeiconsIcon icon={ArrowRight02Icon} className="size-4.5" />
               </Link>
             </div>
             <div></div>
           </div>
-          <div className="grid md:grid-cols-2 gap-10 mt-[50px] xl:mt-[150px] max-w-3xl">
+          <div className="grid md:grid-cols-2 gap-10 mt-15 xl:mt-[150px] max-w-3xl">
             <div className="flex items-center gap-4">
               <div className="p-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
                 <HugeiconsIcon icon={Clock01Icon} strokeWidth={2} />
               </div>
-              <h2>Pilih waktu perjalanan sesuai kebutuhan Anda tanpa ribet.</h2>
+              <h2>
+                Pilih waktu perjalanan sesuai kebutuhan Anda, kami bantu susun
+                itinerary terbaik.
+              </h2>
             </div>
             <div className="flex items-center gap-4">
               <div className="p-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
                 <HugeiconsIcon icon={MountainIcon} strokeWidth={2} />
               </div>
               <h2>
-                Kami menghadirkan pilihan destinasi populer dan hidden gem
+                Kami menghadirkan pilihan destinasi populer dan hidden gems
                 terbaik di Asia.
               </h2>
             </div>
@@ -182,16 +185,16 @@ export function LandingView() {
         </div>
       </section>
       <section className="w-full max-w-[1240px] mx-auto pt-5 pb-15 xl:pt-10 xl:pb-30 px-6 md:px-0">
-        <div className="grid md:grid-cols-10">
-          <div className="md:col-span-4 xl:pr-10 mb-10 xl:mb-0">
+        <div className="grid md:grid-cols-12">
+          <div className="md:col-span-5 xl:pr-10 mb-10 xl:mb-0">
             <h2 className="font-el-messiri text-[40px] xl:text-[52px] font-semibold leading-none">
-              Experience The New Adventure
+              Pengalaman Liburan Tanpa Batas
             </h2>
             <p className="mt-5">
-              Kami membantu Anda menikmati perjalanan tanpa ribet, mulai dari
-              perencanaan hingga kembali pulang. Dengan pengalaman dan pelayanan
-              terbaik, setiap perjalanan Anda akan terasa lebih aman, nyaman,
-              dan menyenangkan.
+              Kami memahami bahwa setiap perjalanan adalah cerita yang berharga.
+              Oleh karena itu, kami menghadirkan layanan travel yang dirancang
+              khusus untuk kenyamanan dan ketenangan pikiran Anda dari awal
+              hingga akhir perjalanan.
             </p>
             <div className="flex flex-col gap-y-7 mt-6">
               <div className="flex gap-5">
@@ -200,11 +203,12 @@ export function LandingView() {
                 </div>
                 <div className="flex-1">
                   <h3 className="font-el-messiri text-2xl font-semibold">
-                    Safe Traveling
+                    Perjalanan Aman & Terjamin
                   </h3>
                   <p className=" text-[#7A7A7A]">
-                    Tim profesional kami memastikan setiap perjalanan berjalan
-                    lancar dengan standar keamanan terbaik.
+                    Nikmati liburan tanpa rasa khawatir dengan perlindungan
+                    asuransi komprehensif dan panduan dari tour guide lokal
+                    berpengalaman.
                   </p>
                 </div>
               </div>
@@ -214,11 +218,12 @@ export function LandingView() {
                 </div>
                 <div className="flex-1">
                   <h3 className="font-el-messiri text-2xl font-semibold">
-                    Affordable Price
+                    Harga Terbaik & Transparan
                   </h3>
                   <p className="text-[#7A7A7A]">
-                    Nikmati paket wisata berkualitas dengan harga yang jelas
-                    tanpa biaya tersembunyi.
+                    Kualitas pelayanan premium tanpa biaya tersembunyi. Dapatkan
+                    penawaran paket liburan terbaik yang sesuai dengan anggaran
+                    Anda.
                   </p>
                 </div>
               </div>
@@ -228,17 +233,17 @@ export function LandingView() {
                 </div>
                 <div className="flex-1">
                   <h3 className="font-el-messiri text-2xl font-semibold">
-                    Comfort Accommodation
+                    Akomodasi Eksklusif
                   </h3>
                   <p className="text-[#7A7A7A]">
-                    Kami bekerja sama dengan hotel dan penginapan terbaik untuk
-                    memastikan kenyamanan Anda selama perjalanan.
+                    Kami memastikan kualitas istirahat Anda tetap terjaga dengan
+                    memilih hotel dan resor bermutu tinggi di setiap destinasi.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="md:col-span-6 xl:ml-[15px]">
+          <div className="md:col-span-7 xl:ml-[15px]">
             <div className="w-full h-150 xl:h-full relative rounded-3xl overflow-hidden">
               <Image
                 src="/assets/images/bg/young-beautiful-woman-walking-on-campuhan-ridge-way-of-artists-in-bali-ubud-.jpg"
@@ -255,14 +260,13 @@ export function LandingView() {
           <div className="grid md:grid-cols-10 mb-15">
             <div className="md:col-span-6 mb-5 xl:mb-0">
               <h2 className="max-w-[620px] font-el-messiri text-[40px] xl:text-[52px] font-semibold text-white leading-none">
-                Discover A Mesmerizing Nature Landscape & Stunning Culture
+                Mahakarya Alam dan Budaya yang Memukau
               </h2>
             </div>
             <div className="md:col-span-4">
               <p className="text-white/80 mb-8">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et magnis dis parturient montes.
+                Jangan hanya mendengar dari kami. Lihat apa kata mereka yang
+                telah mempercayakan momen liburan berharganya bersama Touvel.
               </p>
               <button className="flex items-center justify-center gap-2.5 py-[15px] px-[34px] bg-white text-[#171717] text-sm font-karla font-medium tracking-[0.3px] rounded-full">
                 LEARN MORE
@@ -334,11 +338,12 @@ export function LandingView() {
       <section className="w-full max-w-[1240px] mx-auto pt-30 pb-25 px-6 md:px-0">
         <div className="w-full max-w-[480px] mx-auto mb-10">
           <h2 className="text-center font-el-messiri text-[40px] xl:text-[52px] font-semibold leading-none mb-5">
-            Find Out The Best Travel Choice in Asia
+            Pilihan Destinasi Terfavorit di Asia
           </h2>
           <p className="text-center mb-8">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa.
+            Dari hiruk-pikuk kota metropolitan hingga ketenangan alam yang asri,
+            temukan paket perjalanan yang paling sesuai dengan gaya liburan
+            Anda.
           </p>
           <div className="flex w-full items-center gap-2.5 border border-[#0E0700] rounded-full p-2.5">
             <button className="flex-auto bg-neutral-200 text-sm font-medium py-2.5 rounded-full">
@@ -420,9 +425,9 @@ export function LandingView() {
             Lebih Dekat Dengan Liburan Impian Anda
           </h2>
           <p className="text-white/50 mb-5">
-            Hubungi kami sekarang dan dapatkan penawaran terbaik untuk
-            perjalanan Anda. Tim kami siap membantu merencanakan liburan yang
-            sesuai dengan kebutuhan dan budget Anda.
+            Jangan biarkan rencana liburan Anda hanya menjadi wacana.
+            Konsultasikan perjalanan Anda secara gratis dengan tim kami dan
+            dapatkan penawaran eksklusif bulan ini.
           </p>
           <button className="flex items-center justify-center gap-2.5 py-[15px] px-[34px] bg-white text-[#171717] text-sm font-karla font-medium tracking-[0.3px] rounded-full">
             HUBUNGI KAMI SEKARANG

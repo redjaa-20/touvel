@@ -1,5 +1,6 @@
 export const NAVIGATION = [
-  { name: "Home", href: "/" },
-  { name: "Services", href: "#" },
-  { name: "About Us", href: "#" },
+  { name: "HOME", href: "/" },
+  { name: "LAYANAN", href: "#" },
+  { name: "DESTINASI", href: "#" },
+  { name: "TENTANG KAMI", href: "#" },
 ];
