@@ -3,10 +3,10 @@ import { NAVIGATION } from "src/const/navigation";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0E0700] pt-20 pb-5 px-6 md:px-0">
+    <footer className="bg-[#0E0700] pt-20 pb-5 px-4 md:px-6 xl:px-0">
       <div className="w-full max-w-[1240px] mx-auto text-white">
         <div className="grid md:grid-cols-10 gap-y-[30px]">
-          <div className="md:col-span-3">
+          <div className="md:col-span-5 xl:col-span-3">
             <h2 className="font-el-messiri text-5xl font-medium tracking-[0.3px] transition-colors duration-300 text-white mb-3">
               Touvel
             </h2>
@@ -17,7 +17,7 @@ export default function Footer() {
               Nusa Dua, 81566
             </p>
           </div>
-          <div className="md:col-span-2">
+          <div className="md:col-span-5 xl:col-span-2">
             <h2 className="font-el-messiri text-[28px] font-semibold mb-5">
               Halaman
             </h2>
@@ -36,7 +36,7 @@ export default function Footer() {
               )}
             </ul>
           </div>
-          <div className="md:col-span-2">
+          <div className="md:col-span-5 xl:col-span-2">
             <h2 className="font-el-messiri text-[28px] font-semibold mb-5">
               Tautan Penting
             </h2>
@@ -75,7 +75,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="md:col-span-3">
+          <div className="md:col-span-5 xl:col-span-3">
             <h2 className="font-el-messiri text-[28px] font-semibold mb-5">
               Our Newsletter
             </h2>

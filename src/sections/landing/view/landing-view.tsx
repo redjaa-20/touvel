@@ -13,7 +13,7 @@ import {
 import { HugeiconsIcon } from "@hugeicons/react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Footer from "src/components/footer";
 import Header from "src/components/header";
 import { DESTINATION } from "src/const/destination";
@@ -54,9 +54,9 @@ export function LandingView() {
           backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("${HERO_IMAGES[currentImage]}")`,
         }}
       >
-        <div className="w-full max-w-[1240px] mx-auto pt-[180px] pb-[50px] xl:pt-[250px] xl:pb-[70px] px-4 md:px-0">
+        <div className="w-full max-w-[1240px] mx-auto pt-[180px] pb-[50px] xl:pt-[250px] xl:pb-[70px] px-4 md:px-6 xl:px-0">
           <div className="flex">
-            <div className="w-full xl:max-w-[55%]">
+            <div className="w-full md:max-w-[65%] xl:max-w-[55%]">
               <div className="bg-white/10 backdrop-blur-sm inline-flex items-center px-[15px] py-2.5 rounded-full border border-white/20">
                 <h2 className="font-medium tracking-[0.3px]">
                   Jelajahi Destinasi Terbaik
@@ -99,10 +99,10 @@ export function LandingView() {
       </section>
       <section
         id="sec-1"
-        className="w-full max-w-[1240px] mx-auto py-15 xl:pt-30 xl:pb-20 px-4 md:px-0"
+        className="w-full max-w-[1240px] mx-auto py-15 xl:pt-30 xl:pb-20 px-4 md:px-6 xl:px-0"
       >
         <div className="grid md:grid-cols-10 gap-y-5 xl:gap-[45px]">
-          <div className="md:col-span-4 h-64 xl:h-full flex items-end p-5 xl:p-10 relative rounded-3xl overflow-hidden group">
+          <div className="md:col-span-10 xl:col-span-4 h-64 md:h-75 xl:h-full flex items-end p-5 xl:p-10 relative rounded-3xl overflow-hidden group">
             <Image
               src="/assets/images/travel/bromo.png"
               alt="1"
@@ -122,9 +122,9 @@ export function LandingView() {
               </div>
             </div>
           </div>
-          <div className="md:col-span-6 flex flex-col gap-y-5 xl:gap-y-[45px]">
-            <div className="grid md:grid-cols-2 gap-y-5 xl:gap-[45px]">
-              <div className="w-full h-64 xl:h-75 flex items-end p-5 xl:p-[30px] relative rounded-3xl overflow-hidden group">
+          <div className="md:col-span-10 xl:col-span-6 flex flex-col gap-y-5 xl:gap-y-[45px]">
+            <div className="grid md:grid-cols-2 gap-y-5 md:gap-x-[25px] xl:gap-[45px]">
+              <div className="w-full h-64 md:h-75 flex items-end p-5 xl:p-[30px] relative rounded-3xl overflow-hidden group">
                 <Image
                   src="/assets/images/travel/krabi.png"
                   alt="2"
@@ -144,7 +144,7 @@ export function LandingView() {
                   </div>
                 </div>
               </div>
-              <div className="w-full h-64 xl:h-75 flex items-end p-5 xl:p-[30px] relative rounded-3xl overflow-hidden group">
+              <div className="w-full h-64 md:h-75 flex items-end p-5 xl:p-[30px] relative rounded-3xl overflow-hidden group">
                 <Image
                   src="/assets/images/travel/hanoi.png"
                   alt="3"
@@ -165,7 +165,7 @@ export function LandingView() {
                 </div>
               </div>
             </div>
-            <div className="w-full h-64 xl:h-95 flex items-end p-5 xl:p-[30px] relative rounded-3xl overflow-hidden group">
+            <div className="w-full h-64 md:h-75 xl:h-95 flex items-end p-5 xl:p-[30px] relative rounded-3xl overflow-hidden group">
               <Image
                 src="/assets/images/bg/padar-island-with-scenic-high-view-of-three-beautiful-white-sandy-beaches-surrounded-by-a-wide-ocean-1.jpg"
                 alt="4"
@@ -188,9 +188,9 @@ export function LandingView() {
           </div>
         </div>
       </section>
-      <section className="w-full max-w-[1240px] mx-auto pt-5 pb-15 xl:pt-10 xl:pb-30 px-4 md:px-0">
+      <section className="w-full max-w-[1240px] mx-auto pt-5 pb-15 xl:pt-10 xl:pb-30 px-4 md:px-6 xl:px-0">
         <div className="grid md:grid-cols-12">
-          <div className="md:col-span-5 xl:pr-10 mb-10 xl:mb-0">
+          <div className="md:col-span-12 xl:col-span-5 xl:pr-10 mb-10 xl:mb-0">
             <h2 className="font-el-messiri text-[40px] xl:text-[52px] font-semibold leading-none">
               Pengalaman Liburan Tanpa Batas
             </h2>
@@ -247,7 +247,7 @@ export function LandingView() {
               </div>
             </div>
           </div>
-          <div className="md:col-span-7 xl:ml-[15px]">
+          <div className="md:col-span-12 xl:col-span-7 xl:ml-[15px]">
             <div className="w-full h-150 xl:h-full relative rounded-3xl overflow-hidden">
               <Image
                 src="/assets/images/bg/young-beautiful-woman-walking-on-campuhan-ridge-way-of-artists-in-bali-ubud-.jpg"
@@ -259,15 +259,15 @@ export function LandingView() {
           </div>
         </div>
       </section>
-      <section className="bg-[#0E0700] py-20 xl:py-30 px-4 md:px-0">
+      <section className="bg-[#0E0700] py-20 xl:py-30 px-4 md:px-6 xl:px-0">
         <div className="w-full max-w-[1240px] mx-auto ">
           <div className="grid md:grid-cols-10 mb-15">
-            <div className="md:col-span-6 mb-5 xl:mb-0">
+            <div className="md:col-span-12 xl:col-span-6 mb-5 xl:mb-0">
               <h2 className="max-w-[620px] font-el-messiri text-[40px] xl:text-[52px] font-semibold text-white leading-none">
                 Mahakarya Alam dan Budaya yang Memukau
               </h2>
             </div>
-            <div className="md:col-span-4">
+            <div className="md:col-span-12 xl:col-span-4">
               <p className="text-white/80 mb-8">
                 Jangan hanya mendengar dari kami. Lihat apa kata mereka yang
                 telah mempercayakan momen liburan berharganya bersama Touvel.
@@ -278,7 +278,7 @@ export function LandingView() {
             </div>
           </div>
           <div
-            className="grid md:grid-cols-4 gap-x-10"
+            className="overflow-hidden"
             style={{
               maskImage:
                 "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
@@ -286,32 +286,40 @@ export function LandingView() {
                 "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
             }}
           >
-            {TESTIMONIAL.map((item, index) => (
-              <div
-                key={index}
-                className="flex flex-col bg-neutral-900 rounded-3xl p-[30px]"
-              >
-                <p className="text-white/70 flex-1">{item.text}</p>
-                <div className="flex gap-4 mt-8">
-                  <div className="size-11 relative rounded-full overflow-hidden">
-                    <Image
-                      src={`/assets/images/bg/${item.image}`}
-                      alt="Person"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="flex-1 flex flex-col justify-between">
-                    <h2 className="font-el-messiri text-white text-2xl font-semibold leading-none line-clamp-1">
-                      {item.name}
-                    </h2>
-                    <h3 className="text-white/50 text-sm leading-none">
-                      {item.role}
-                    </h3>
+            <div
+              className="flex gap-6 hover:[animation-play-state:paused]"
+              style={{
+                animation: "testimonial-scroll 30s linear infinite",
+                width: "fit-content",
+              }}
+            >
+              {[...TESTIMONIAL, ...TESTIMONIAL].map((item, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col bg-neutral-900 rounded-3xl p-[30px] min-w-[300px] max-w-[300px]"
+                >
+                  <p className="text-white/70 flex-1">{item.text}</p>
+                  <div className="flex gap-4 mt-8">
+                    <div className="size-11 relative rounded-full overflow-hidden shrink-0">
+                      <Image
+                        src={`/assets/images/bg/${item.image}`}
+                        alt="Person"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="flex-1 flex flex-col justify-between">
+                      <h2 className="font-el-messiri text-white text-2xl font-semibold leading-none line-clamp-1">
+                        {item.name}
+                      </h2>
+                      <h3 className="text-white/50 text-sm leading-none">
+                        {item.role}
+                      </h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -339,7 +347,7 @@ export function LandingView() {
           </div>
         </div>
       </section> */}
-      <section className="w-full max-w-[1240px] mx-auto pt-30 pb-25 px-4 md:px-0">
+      <section className="w-full max-w-[1240px] mx-auto pt-30 pb-25 px-4 md:px-6 xl:px-0">
         <div className="w-full max-w-[480px] mx-auto mb-10">
           <h2 className="text-center font-el-messiri text-[40px] xl:text-[52px] font-semibold leading-none mb-5">
             Pilihan Destinasi Terfavorit di Asia
@@ -361,7 +369,7 @@ export function LandingView() {
             </button>
           </div>
         </div>
-        <div className="grid md:grid-cols-4 gap-y-5 md:gap-10">
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-y-5 md:gap-5 xl:gap-10">
           {DESTINATION.map((item, index) => (
             <div
               key={index}

@@ -94,7 +94,7 @@ export default function Header() {
       </header>
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-60 bg-black text-white transition-transform duration-300 md:hidden flex flex-col ${
+        className={`fixed inset-0 z-60 bg-[#171717] text-white transition-transform duration-300 md:hidden flex flex-col ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
