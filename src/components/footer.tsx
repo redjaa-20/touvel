@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { NAVIGATION } from "src/const/navigation";
 
 export default function Footer() {
   return (
@@ -18,46 +19,26 @@ export default function Footer() {
           </div>
           <div className="md:col-span-2">
             <h2 className="font-el-messiri text-[28px] font-semibold mb-5">
-              Page
+              Halaman
             </h2>
             <ul className="space-y-3 text-white/50">
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-white transition-colors duration-200"
-                >
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-white transition-colors duration-200"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-white transition-colors duration-200"
-                >
-                  FAQ
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-white transition-colors duration-200"
-                >
-                  Contact Us
-                </Link>
-              </li>
+              {NAVIGATION.filter((nav) => nav.name !== "Home").map(
+                (nav, index) => (
+                  <li key={index}>
+                    <Link
+                      href={nav.href}
+                      className="hover:text-white transition-colors duration-200"
+                    >
+                      {nav.name}
+                    </Link>
+                  </li>
+                ),
+              )}
             </ul>
           </div>
           <div className="md:col-span-2">
             <h2 className="font-el-messiri text-[28px] font-semibold mb-5">
-              Important Link
+              Tautan Penting
             </h2>
             <ul className="space-y-3 text-white/50">
               <li>
@@ -65,7 +46,7 @@ export default function Footer() {
                   href="#"
                   className="hover:text-white transition-colors duration-200"
                 >
-                  Privacy Policy
+                  Kebijakan Privasi
                 </Link>
               </li>
               <li>
@@ -73,7 +54,7 @@ export default function Footer() {
                   href="#"
                   className="hover:text-white transition-colors duration-200"
                 >
-                  Career
+                  Karir
                 </Link>
               </li>
               <li>
@@ -89,7 +70,7 @@ export default function Footer() {
                   href="#"
                   className="hover:text-white transition-colors duration-200"
                 >
-                  Term & Condition
+                  Syarat & Ketentuan
                 </Link>
               </li>
             </ul>

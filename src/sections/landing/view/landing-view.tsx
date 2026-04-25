@@ -22,10 +22,14 @@ import { TESTIMONIAL } from "src/const/testimonials";
 // ------------------------------------------------------------
 
 const HERO_IMAGES = [
-  "/assets/images/bg/hero-bg-1.jpg",
-  "/assets/images/bg/hero-bg-2.jpg",
-  "/assets/images/bg/hero-bg-3.jpg",
-  "/assets/images/bg/hero-bg-4.jpg",
+  // "/assets/images/bg/hero-bg-1.jpg",
+  // "/assets/images/bg/hero-bg-2.jpg",
+  // "/assets/images/bg/hero-bg-3.jpg",
+  // "/assets/images/bg/hero-bg-4.jpg",
+  "/assets/images/travel/bromo.png",
+  "/assets/images/travel/palawan.png",
+  "/assets/images/travel/jeju.png",
+  "/assets/images/travel/maldives.png",
 ];
 
 // ------------------------------------------------------------
@@ -100,7 +104,7 @@ export function LandingView() {
         <div className="grid md:grid-cols-10 gap-y-5 xl:gap-[45px]">
           <div className="md:col-span-4 h-64 xl:h-full flex items-end p-5 xl:p-10 relative rounded-3xl overflow-hidden group">
             <Image
-              src="/assets/images/bg/beautiful-landscape-of-a-diamond-beach-on-the-island-nusa-penida.jpg"
+              src="/assets/images/travel/bromo.png"
               alt="1"
               fill
               className="object-cover group-hover:scale-110 transition-all duration-300"
@@ -109,9 +113,9 @@ export function LandingView() {
             <div className="w-full z-10 flex items-center justify-between">
               <div>
                 <h2 className="font-el-messiri text-3xl font-semibold text-white">
-                  Kelingking Beach
+                  Gunung Bromo
                 </h2>
-                <h3 className="text-white/60">Nusa Penida, Bali</h3>
+                <h3 className="text-white/60">Indonesia</h3>
               </div>
               <div className="p-3 text-white rounded-full border border-white">
                 <HugeiconsIcon icon={ArrowUpRight01Icon} strokeWidth={2} />
@@ -122,7 +126,7 @@ export function LandingView() {
             <div className="grid md:grid-cols-2 gap-y-5 xl:gap-[45px]">
               <div className="w-full h-64 xl:h-75 flex items-end p-5 xl:p-[30px] relative rounded-3xl overflow-hidden group">
                 <Image
-                  src="/assets/images/bg/statue-in-grand-palace-at-bangkok.jpg"
+                  src="/assets/images/travel/krabi.png"
                   alt="2"
                   fill
                   className="object-cover group-hover:scale-110 transition-all duration-300"
@@ -131,9 +135,9 @@ export function LandingView() {
                 <div className="w-full z-10 flex items-center justify-between">
                   <div>
                     <h2 className="font-el-messiri text-3xl font-semibold text-white">
-                      Grand Palace
+                      Krabi
                     </h2>
-                    <h3 className="text-white/60">Bangkok, Thailand</h3>
+                    <h3 className="text-white/60">Thailand</h3>
                   </div>
                   <div className="p-3 text-white rounded-full border border-white">
                     <HugeiconsIcon icon={ArrowUpRight01Icon} strokeWidth={2} />
@@ -142,7 +146,7 @@ export function LandingView() {
               </div>
               <div className="w-full h-64 xl:h-75 flex items-end p-5 xl:p-[30px] relative rounded-3xl overflow-hidden group">
                 <Image
-                  src="/assets/images/bg/traditional-turkish-breakfast-with-fruits-with-cappadocia-view.jpg"
+                  src="/assets/images/travel/hanoi.png"
                   alt="3"
                   fill
                   className="object-cover group-hover:scale-110 transition-all duration-300"
@@ -151,9 +155,9 @@ export function LandingView() {
                 <div className="w-full z-10 flex items-center justify-between">
                   <div>
                     <h2 className="font-el-messiri text-3xl font-semibold text-white">
-                      Cappadocia
+                      Hanoi
                     </h2>
-                    <h3 className="text-white/60">Turkey</h3>
+                    <h3 className="text-white/60">Vietnam</h3>
                   </div>
                   <div className="p-3 text-white rounded-full border border-white">
                     <HugeiconsIcon icon={ArrowUpRight01Icon} strokeWidth={2} />
@@ -172,9 +176,9 @@ export function LandingView() {
               <div className="w-full z-10 flex items-center justify-between">
                 <div>
                   <h2 className="font-el-messiri text-3xl font-semibold text-white">
-                    Padar Island
+                    Pulau Padar
                   </h2>
-                  <h3 className="text-white/60">East Nusa Tenggara</h3>
+                  <h3 className="text-white/60">Nusa Tenggara Timur</h3>
                 </div>
                 <div className="p-3 text-white rounded-full border border-white">
                   <HugeiconsIcon icon={ArrowUpRight01Icon} strokeWidth={2} />
@@ -269,7 +273,7 @@ export function LandingView() {
                 telah mempercayakan momen liburan berharganya bersama Touvel.
               </p>
               <button className="flex items-center justify-center gap-2.5 py-[15px] px-[34px] bg-white text-[#171717] text-sm font-karla font-medium tracking-[0.3px] rounded-full">
-                LEARN MORE
+                PELAJARI SELENGKAPNYA
               </button>
             </div>
           </div>
