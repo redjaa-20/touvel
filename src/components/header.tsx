@@ -44,7 +44,7 @@ export default function Header() {
             : "bg-transparent py-5"
         } ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
       >
-        <div className="w-full max-w-[1240px] mx-auto px-4 md:px-0">
+        <div className="w-full max-w-[1240px] mx-auto px-4 md:px-6 xl:px-0">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <h2
