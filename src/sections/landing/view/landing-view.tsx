@@ -50,7 +50,7 @@ export function LandingView() {
           backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("${HERO_IMAGES[currentImage]}")`,
         }}
       >
-        <div className="w-full max-w-[1240px] mx-auto pt-[180px] pb-[50px] xl:pt-[250px] xl:pb-[70px] px-5 md:px-0">
+        <div className="w-full max-w-[1240px] mx-auto pt-[180px] pb-[50px] xl:pt-[250px] xl:pb-[70px] px-4 md:px-0">
           <div className="flex">
             <div className="w-full xl:max-w-[55%]">
               <div className="bg-white/10 backdrop-blur-sm inline-flex items-center px-[15px] py-2.5 rounded-full border border-white/20">
@@ -71,7 +71,7 @@ export function LandingView() {
             </div>
             <div></div>
           </div>
-          <div className="grid md:grid-cols-2 gap-10 mt-[50%] xl:mt-[150px] max-w-3xl">
+          <div className="grid md:grid-cols-2 gap-10 mt-[50px] xl:mt-[150px] max-w-3xl">
             <div className="flex items-center gap-4">
               <div className="p-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
                 <HugeiconsIcon icon={Clock01Icon} strokeWidth={2} />
@@ -95,7 +95,7 @@ export function LandingView() {
       </section>
       <section
         id="sec-1"
-        className="w-full max-w-[1240px] mx-auto py-15 xl:pt-30 xl:pb-20 px-5 md:px-0"
+        className="w-full max-w-[1240px] mx-auto py-15 xl:pt-30 xl:pb-20 px-4 md:px-0"
       >
         <div className="grid md:grid-cols-10 gap-y-5 xl:gap-[45px]">
           <div className="md:col-span-4 h-64 xl:h-full flex items-end p-5 xl:p-10 relative rounded-3xl overflow-hidden group">
@@ -184,7 +184,7 @@ export function LandingView() {
           </div>
         </div>
       </section>
-      <section className="w-full max-w-[1240px] mx-auto pt-5 pb-15 xl:pt-10 xl:pb-30 px-5 md:px-0">
+      <section className="w-full max-w-[1240px] mx-auto pt-5 pb-15 xl:pt-10 xl:pb-30 px-4 md:px-0">
         <div className="grid md:grid-cols-12">
           <div className="md:col-span-5 xl:pr-10 mb-10 xl:mb-0">
             <h2 className="font-el-messiri text-[40px] xl:text-[52px] font-semibold leading-none">
@@ -255,7 +255,7 @@ export function LandingView() {
           </div>
         </div>
       </section>
-      <section className="bg-[#0E0700] py-20 xl:py-30 px-5 md:px-0">
+      <section className="bg-[#0E0700] py-20 xl:py-30 px-4 md:px-0">
         <div className="w-full max-w-[1240px] mx-auto ">
           <div className="grid md:grid-cols-10 mb-15">
             <div className="md:col-span-6 mb-5 xl:mb-0">
@@ -335,7 +335,7 @@ export function LandingView() {
           </div>
         </div>
       </section> */}
-      <section className="w-full max-w-[1240px] mx-auto pt-30 pb-25 px-5 md:px-0">
+      <section className="w-full max-w-[1240px] mx-auto pt-30 pb-25 px-4 md:px-0">
         <div className="w-full max-w-[480px] mx-auto mb-10">
           <h2 className="text-center font-el-messiri text-[40px] xl:text-[52px] font-semibold leading-none mb-5">
             Pilihan Destinasi Terfavorit di Asia
@@ -420,7 +420,7 @@ export function LandingView() {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-20 w-full md:max-w-[500px] mx-auto flex flex-col items-center text-center px-5 md:px-0 text-white">
+        <div className="relative z-20 w-full md:max-w-[500px] mx-auto flex flex-col items-center text-center px-4 md:px-0 text-white">
           <h2 className="font-el-messiri text-[40px] xl:text-[52px] font-semibold leading-none mb-3">
             Lebih Dekat Dengan Liburan Impian Anda
           </h2>
